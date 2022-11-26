@@ -67,8 +67,8 @@ export default {
       hiddenLoading: false,
       showSnack: false,
       timeStr: new Date().toLocaleString(),
-      name: '试着点我三次',
-      personType: localStorage.getItem('personType') || '未设置',
+      name: '陈意涵',
+      personType: localStorage.getItem('personType') || '研究生（硕士）',
       clickCount: 0
     }
   },
@@ -79,7 +79,7 @@ export default {
       const tText = type && type === 'out' ?
         localStorage.getItem('leaveText') :
         localStorage.getItem('enterText')
-      return tText || '尚未设置，请点击用户姓名进入设置页'
+      return tText || '研究生用户，入校授权有效'
     }
   },
 
